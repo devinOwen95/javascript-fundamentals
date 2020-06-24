@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   <body>
+    <h1>I am a big title</h1>
+    <h2>I'm big but a little smaller</h2>
+    <h6>smallest title tag</h6>
+
+
+    <p>I am what kind of tag?(paragraph)</p>
+
+    <div>   
+        <p>to seperate info</p>    
+            <div>
+                <p> for my personal leisure</p>
+            </div>
+            <div>
+                <p> pro-bono work</p>
+            </div>
+
+    </div>
+
+    <!-- 
+        This is for your eyes only
+
+        CHALLENGE 1: TWO TRUTHS & A LIE
+    Bronze:
+      Make an h1 tag saying 'Two Truths and a Lie'
+      Make 3 h3 tags, each saying a short blurb about that option (example: 'Been to Russia')
+      Make 3 p tags (one for each h3 tag), giving a short sentence elaborating that truth/lie
+      Wrap it all in a div tag
+    Silver:
+      Using CSS:
+      Make the h1 tag LIGHT GREEN and CENTERED
+      Make each h3 tag BLUE
+      Make each p tag RED
+      Wrap it all in a BORDER that is THICK and BLACK
+    Gold:
+      Curve the corners of that BORDER
+      Give it a BACKGROUND COLOR of GREY
+      Wrap each Truth/Lie in separate divs, give them each a BORDER, curve the BORDER, and make each BACKGROUND COLOR light sky blue
+      CENTER everything in each div
+      Line each Truth/Lie side-by-side
+    -->
+    <!--
+        three kinds of casing
+        PascalCasing
+        camelCasing
+        snake_casing
+        all make easier to read
+    -->
+    <div id="truthLieSection">
+        <h1 id="truthLieTitle">Two truths and a Lie</h1>  
+        <div class="truthLieContainer">
+            <h3 class = "truthOrLie">Movie</h3>
+               <p class ="description">I was in an Indie Zombie film where I was a zombie. </p>
+        </div>
+        <div class="truthLieContainer">
+            <h3 class = "truthOrLie" >Mafia</h3>
+                <p class = "description">I had an extremley tense dinner with the wife of the Don of the Taiwanese mafia.</p>      
+        </div>
+        <div class="truthLieContainer">
+
+            <h3 class = "truthOrLie" >Potatoes</h3>
+               <p class = "description">I love potatoes and eat them all the time.</p>
+        </div>
+    </div>
+
+
+    <style>
+
+        #truthLieTitle {
+            color:lightgreen;
+            text-align:center; 
+                   
+        } 
+        .truthOrLie {
+            color:blue;
+
+        }  
+        .description{
+            color: red;
+
+        }
+        #truthLieSection{
+            border:3px solid black;
+            border-radius: 20px;
+            background-color: lightgray;
+        
+
+
+       
+       
+       
+       
+            <!-- another way to say this is
+            border: width 2px;
+            border-style: solid;
+            border-color:black;
+            -->
+        }
+        .truthLieContainer{
+            border: 1px solid maroon;
+            border-radius: 5px;
+            text-align: center;
+            background-color: lightskyblue;
+            display: inline-block;
+            width: 32%;
+
+
+        }
+    </style>
+
+
+
+
+</body>
+</html>
